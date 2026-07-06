@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,p,q,a=0;
+    int n,p,q;
+    int a=0;
     cin>>n;
     while(n--){
         cin>>p>>q;
