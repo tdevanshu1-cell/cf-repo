@@ -4,11 +4,10 @@ using namespace std;
  
 int main()
 {
-    int n;
+    int n,ans=0;
     cin >> n;
     string s;
     cin >> s;
-    int ans = 0;
      vector<bool>v(26,false);
     if (n >= 26)
     {
