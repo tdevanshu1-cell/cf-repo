@@ -28,7 +28,6 @@ int main()
     if(n>=1&&n<5){
         a+=n/1;
         n=n%1;
-        
     }
     cout<<a;
  
