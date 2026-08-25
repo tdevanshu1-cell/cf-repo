@@ -1,20 +1,31 @@
 #include <iostream>
 using namespace std;
  
-void solve() {
-    long long x, y, n;
-    cin >> x >> y >> n;
-    long long ans = ((n - y) / x) * x + y;
-    cout << ans << "\n";
-}
- 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+int main()
+{
     int t;
     cin >> t;
-    while (t--) {
-        solve();
+    while (t--)
+    {
+        int x, y, n, k;
+        cin >> x >> y >> n;
+        if ((n % x) > y)
+        {
+            cout << (n - (n % x) + y) << "\n";
+        }
+        else if (n < x)
+        {
+            cout << y<<"\n";
+        }
+        else if (y == 0)
+        {
+            cout << (n - (n % x) + y) << "\n";
+        }
+        else if ((n % x) < y)
+        {
+            cout<<((x * ((n / x) - 1)) + y)<<"\n";
+        }
+        else{cout<<n<<"\n";}
     }
     return 0;
 }
