@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+ 
 int main()
 {
     int t;
@@ -38,7 +38,7 @@ int main()
         {
             sum += a[n];
         }
-        cout << sum << "\n";
+        cout <<sum << "\n";
     }
     return 0;
 }
