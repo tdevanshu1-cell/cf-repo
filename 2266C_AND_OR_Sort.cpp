@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+ 
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -18,7 +18,7 @@ int main()
         if (is_sorted(s.begin(), s.end()))
         {
             cout << 0 << "\n";
-            continue; // FIX: Changed from return; to continue;
+            continue; 
         }
         
         if (s[0] == '1')
@@ -30,7 +30,7 @@ int main()
                     O_count++;
             }
             cout << O_count << "\n";
-            continue; // FIX: Changed from return; to continue;
+            continue; 
         }
         
         int first_l = -1;
@@ -42,7 +42,7 @@ int main()
                 break;
             }
         }
- 
+ 
         int total_ls = 0;
         for (char c : s)
         {
@@ -50,11 +50,11 @@ int main()
                 total_ls++;
         }
         int total_Os = n - total_ls;
- 
+ 
         int ls_in_prefix = 0;
         int Os_in_prefix = 0;
         int min_ops = n;
- 
+ 
         for (int k = 0; k <= n; k++)
         {
             if (k > 0)
@@ -71,9 +71,9 @@ int main()
                 min_ops = min(min_ops, current_ops);
             }
         }
- 
+ 
         cout << min_ops << "\n";
     }
- 
+ 
     return 0;
 }
